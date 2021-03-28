@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Repaso de Variedades diferenciables &mdash; documentación de Grupos de Lie - Posgrado - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2. Grupos de Lie" href="01-grupos-de-lie.html" />
+    <link rel="prev" title="Grupos de Lie - Posgrado" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Grupos de Lie - Posgrado
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Repaso de Variedades diferenciables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#variedades-diferenciables">1.1. Variedades diferenciables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variedad-diferenciable">1.2. Variedad Diferenciable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#funciones-diferenciables">1.3. Funciones Diferenciables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vectores-ver-warner">1.4. Vectores (ver Warner)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diferencial">1.5. Diferencial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#en-coordenadas">1.6. En coordenadas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01-grupos-de-lie.html">2. Grupos de Lie</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Grupos de Lie - Posgrado</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Repaso de Variedades diferenciables</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Notas/00-variedades-diferenciables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="repaso-de-variedades-diferenciables">
+<h1><span class="section-number">1. </span>Repaso de Variedades diferenciables<a class="headerlink" href="#repaso-de-variedades-diferenciables" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="variedades-diferenciables">
+<h2><span class="section-number">1.1. </span>Variedades diferenciables<a class="headerlink" href="#variedades-diferenciables" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(M\)</span> un espacio topológico, Hausdorff, <span class="math notranslate nohighlight">\(N_{2}\)</span>, localmente euclideo de dimensión <span class="math notranslate nohighlight">\(d\)</span>, <span class="math notranslate nohighlight">\(\forall p \in M,\exists U \text{ abierto de } \mathbb{R}^{d}\)</span> y un homeomorfismo <span class="math notranslate nohighlight">\(\psi:U \to M, p \in \psi(U)\)</span></p>
+<a class="reference internal image-reference" href="../_images/variedades_diferenciables.svg"><img alt="variedades diferenciables" class="align-center" height="300px" src="../_images/variedades_diferenciables.svg" width="100%" /></a>
+<p>Si <span class="math notranslate nohighlight">\(\varphi:U \subset M\to\mathbb{R}^{d}, p \in \varphi(U)\)</span> es un homeomorfismo (<span class="math notranslate nohighlight">\(U\)</span> abierto en <span class="math notranslate nohighlight">\(M\)</span>) entonces <span class="math notranslate nohighlight">\((U,M)\)</span> se llama <span class="underline">sistema de coordenadas</span>.</p>
+<a class="reference internal image-reference" href="../_images/sistema_de_coordenadas.svg"><img alt="sistema de coordenadas" class="align-center" height="300px" src="../_images/sistema_de_coordenadas.svg" width="100%" /></a>
+</div>
+<div class="section" id="variedad-diferenciable">
+<h2><span class="section-number">1.2. </span>Variedad Diferenciable<a class="headerlink" href="#variedad-diferenciable" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>Definición</strong>: Una estructura diferenciable <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> en <span class="math notranslate nohighlight">\(M\)</span> es una colección de sistemas de coordenadas <span class="math notranslate nohighlight">\(\{(U_{\alpha},M_{\alpha})|\alpha\in A\}\)</span> tal que</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(M = \displaystyle\bigcup_{\alpha \in A} U_{\alpha}\)</span></p></li>
+<li><p>Si <span class="math notranslate nohighlight">\((U,\varphi_{1})\)</span> y <span class="math notranslate nohighlight">\((U,\varphi_{2})\)</span> son dos sistemas de coordenadas en <span class="math notranslate nohighlight">\(\mathcal{F}\)</span>. Entonces <span class="math notranslate nohighlight">\(\varphi_{2}\circ\varphi_{1}^{-1}:\varphi_{1}(U\cap V)\to\varphi_{2}(U\cap V) \subseteq \mathbb{R}^{d}\)</span> es <span class="math notranslate nohighlight">\(C^{\infty}\)</span> y tiene inversa <span class="math notranslate nohighlight">\(C^{\infty}\)</span>.</p></li>
+<li><p>La colección <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> es <em>maximal</em> con respecto a <strong>2</strong>.</p></li>
+</ol>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\((M,\mathcal{F})\)</span> es una <span class="underline">variedad diferenciable</span>.</p>
+</div>
+<div class="section" id="funciones-diferenciables">
+<h2><span class="section-number">1.3. </span>Funciones Diferenciables<a class="headerlink" href="#funciones-diferenciables" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Sea <span class="math notranslate nohighlight">\(U \subset M\)</span>, <span class="math notranslate nohighlight">\(U\)</span> abierto. Decimos Si <span class="math notranslate nohighlight">\(f:U \to\mathbb{R}\)</span> es <span class="math notranslate nohighlight">\(C^{\infty}\)</span> sobre <span class="math notranslate nohighlight">\(U\)</span> si <span class="math notranslate nohighlight">\(f\circ\varphi^{-1}:\varphi(U\cap V) \subseteq \mathbb{R}^{d}\to\mathbb{R}\)</span> es <span class="math notranslate nohighlight">\(C^{\infty}\)</span>, <span class="math notranslate nohighlight">\(\forall (U,\varphi)\)</span> sistema de coordenadas.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/funciones_diferenciables_item_uno.svg"><img alt="funciones diferenciables item uno" class="align-center" height="200px" src="../_images/funciones_diferenciables_item_uno.svg" width="100%" /></a>
+<ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(F: M \to N\)</span> es continua entre dos variedades <span class="math notranslate nohighlight">\(M \text{ y } N\)</span></p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/funciones_diferenciables_item_dos.svg"><img alt="funciones diferenciables item uno" class="align-center" height="200px" src="../_images/funciones_diferenciables_item_dos.svg" width="100%" /></a>
+<p>Entonces <span class="math notranslate nohighlight">\(F\)</span> es <span class="math notranslate nohighlight">\(C^{\infty}\)</span> si <span class="math notranslate nohighlight">\(\psi \circ F \circ \varphi^{-1}\)</span> es <span class="math notranslate nohighlight">\(C^{\infty}\)</span> donde <span class="math notranslate nohighlight">\((U,\varphi)\)</span> es un ssistema de coordenadas en <span class="math notranslate nohighlight">\(M\)</span> y <span class="math notranslate nohighlight">\((V,\psi)\)</span> es un sistema de coordenadas en <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(F: M \to N\)</span> es <span class="math notranslate nohighlight">\(C^{\infty}\)</span>, es <span class="math notranslate nohighlight">\(1-1\)</span> y <em>suryectiva</em> decimos que f es un <span class="underline">difeomorfismo</span> con inversos en <span class="math notranslate nohighlight">\(C^{\infty}\)</span>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="vectores-ver-warner">
+<h2><span class="section-number">1.4. </span>Vectores (ver Warner)<a class="headerlink" href="#vectores-ver-warner" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(M\)</span> una variedad y <span class="math notranslate nohighlight">\(m \in M\)</span>. Sea <span class="math notranslate nohighlight">\(C^{\infty}_{m}\)</span> el conjunto de funciones <span class="math notranslate nohighlight">\(f:M \to\mathbb{R}\)</span> de clase <span class="math notranslate nohighlight">\(C^{\infty}\)</span> en el punto <span class="math notranslate nohighlight">\(m\in M\)</span> <span class="math notranslate nohighlight">\(\leftarrow\)</span> <em>es un álgebra</em>.</p>
+<p>Un vector <span class="math notranslate nohighlight">\(v\)</span> en el punto <span class="math notranslate nohighlight">\(m \in M\)</span> es una <span class="underline">derivación lineal</span> de <span class="math notranslate nohighlight">\(C^{\infty}_{m}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[v: C^{\infty}_{m} \to \mathbb{R}\]</div>
+<p><em>a</em>). <span class="math notranslate nohighlight">\(v(f+\lambda g)=v(f)+\lambda v(g)\)</span></p>
+<p><em>b</em>). <span class="math notranslate nohighlight">\(v(f\cdot g)=v(f)g(m)+f(m)v(g)\)</span></p>
+<p><span class="math notranslate nohighlight">\(M_{m}\)</span> denota el conjunto de todos los vectores tangentes a <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p><span class="underline">Definición</span>: <span class="math notranslate nohighlight">\(M_{m}\)</span> es el espacio tangente a <span class="math notranslate nohighlight">\(M\)</span> en <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p><span class="underline">Ejercicio</span>: Verificar que <span class="math notranslate nohighlight">\(M_{m}\)</span> es un <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>-espacio vectorial.</p>
+</div>
+<div class="section" id="diferencial">
+<h2><span class="section-number">1.5. </span>Diferencial<a class="headerlink" href="#diferencial" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\(F:M \to N\)</span> de clase <span class="math notranslate nohighlight">\(C^{\infty}\)</span> y sea <span class="math notranslate nohighlight">\(m \in M\)</span>. El <em>diferencial</em> de <span class="math notranslate nohighlight">\(F\)</span> es una aplicación lineal que va desde el espacio tangente a <span class="math notranslate nohighlight">\(M\)</span> en <span class="math notranslate nohighlight">\(m\)</span> al espacio tangente a <span class="math notranslate nohighlight">\(N\)</span> en <span class="math notranslate nohighlight">\(F(m)\)</span>, es decir,</p>
+<div class="math notranslate nohighlight">
+\[dF:M_{m} \to N_{F(m)}\]</div>
+<p><strong>Definición</strong>:</p>
+<div class="math notranslate nohighlight">
+\[(dF)(v)f=v(f \circ F),~\forall f \in C^{\infty}_{F(m)}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Vamos a explicar la Definición.</p>
+<p>Queremos evaluar a <span class="math notranslate nohighlight">\(dF\)</span> en algo que esté en <span class="math notranslate nohighlight">\(M_{m}\)</span> (el espacio tangente a <span class="math notranslate nohighlight">\(M\)</span> en <span class="math notranslate nohighlight">\(m\)</span>), que está formado por vectores <span class="math notranslate nohighlight">\(v\)</span>. Ahora queremos que <span class="math notranslate nohighlight">\((dF)(v)\)</span> sea un vector sobre <span class="math notranslate nohighlight">\(N\)</span>, entonces como va a ser un vector en <span class="math notranslate nohighlight">\(N_{F(m)}\)</span> (el espacio tangente a <span class="math notranslate nohighlight">\(N\)</span> en <span class="math notranslate nohighlight">\(F(m)\)</span>), tiene que ser algo que actúe en funciones que sean de clase <span class="math notranslate nohighlight">\(C^{\infty}\)</span> al rededor de <span class="math notranslate nohighlight">\(N_{F(m)}\)</span>. Por lo tanto, voy a evaluar <span class="math notranslate nohighlight">\((dF)(v)\)</span> en una <span class="math notranslate nohighlight">\(f: N \to \mathbb{R}\)</span>, es decir,</p>
+<div class="math notranslate nohighlight">
+\[\begin{equation}
+    (dF)(v)f
+\end{equation}\]</div>
+<p>Esto va a ser igual a evaluar el vector <span class="math notranslate nohighlight">\(v\)</span> en funciones sobre <span class="math notranslate nohighlight">\(M\)</span>, entonces lo hacemos sobre <span class="math notranslate nohighlight">\(f\circ F:M \to \mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(\forall f \in C^{\infty}_{F(m)}\)</span>. Luego,</p>
+<div class="math notranslate nohighlight">
+\[(dF)(v)f=v(f \circ F),~\forall f \in C^{\infty}_{F(m)}\]</div>
+<p>está definida.</p>
+</div>
+</div>
+<div class="section" id="en-coordenadas">
+<h2><span class="section-number">1.6. </span>En coordenadas<a class="headerlink" href="#en-coordenadas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sea <span class="math notranslate nohighlight">\((U,\varphi)\)</span> un sistema de coordenadas con funciones coordenadas <span class="math notranslate nohighlight">\(x_{1}, x_{2}, x_{3}, \dots, x_{d}\)</span>, en la variedad <span class="math notranslate nohighlight">\(M\)</span> y <span class="math notranslate nohighlight">\(m\in M\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+    \varphi(m)\in \mathbb{R}\Longrightarrow &amp; \varphi(m) = (x_{1}(m), x_{2}(m), x_{3}(m), \dots, x_{d}(m))\\
+                                            &amp; x_{i}=r_{i}\circ \varphi: U \to \mathbb{R}
+\end{align}\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\displaystyle\left( \frac{\partial}{\partial x_{i}} |_{m} \right) f = \frac{\partial (f\circ \varphi^{-1})}{\partial r_{i}}\)</span> es un <em>vector</em>.</p>
+<div class="figure align-default">
+<img alt="../_images/en_coordenadas.svg" src="../_images/en_coordenadas.svg" /></div>
+<div class="math notranslate nohighlight">
+\[\begin{align}
+    \displaystyle v\in M_{m}\Longrightarrow v=\sum_{i=1}^{d} a_{i}\left( \frac{\partial}{\partial x_{i}} \right)_{m} \text{ para algún } a_{i}
+\end{align}\]</div>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<ul class="simple">
+<li><p>Probar que las esferas <span class="math notranslate nohighlight">\(S^{d}\)</span> son variedades.</p></li>
+<li><p>Ver los Ejemplos de la página 7 del libro de Warner. En particular, el <strong>Ejemplo g</strong> de Variedad Producto.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="01-grupos-de-lie.html" class="btn btn-neutral float-right" title="2. Grupos de Lie" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Grupos de Lie - Posgrado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
